@@ -53,7 +53,6 @@ let current = {
 function insertCurrentWeather(data) {
     city.name = data.name.toUpperCase();
     city.temp = Math.round(data.main.temp);
-
 }
 
 const UNIT = {

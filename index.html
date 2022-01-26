@@ -4,20 +4,34 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <script src="https://kit.fontawesome.com/0a9e24aec6.js" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>Weather News</title>
 </head>
 <body>
-    <h2 id="city-name"></h2>
-    <p id="weather-temp"></p>
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src="/main.js"></script>
+    <div class="container">
+        <div class=" justify-content-center mt-5">
+            <div class="text-center" style="font-size: 7rem;" id="city-name"></div>
+            <div class="mt-3" style="font-size: 10rem;"><i class="d-flex justify-content-center fas fa-sun"></i></div>
+        <div class="mt-4">
+            <ul class="list-group list-group-flush" style="font-size: 2rem;">
+                <li class="list-group-item" style="font-size: 10rem;" id="weather-temp"></li>
+                <!-- <li class="list-group-item" id="tempMax">A second item</li>
+                <li class="list-group-item" id="tempMin">A third item</li>
+                <li class="list-group-item">A fourth item</li>
+                <li class="list-group-item">And a fifth one</li>
+              </ul> -->
+        </div>
+        </div>
+    </div>
 
-<p>
-    参考にしたさいと
-    ・https://qiita.com/ToaruEngineer/items/5260261fa691ef082755
-    ・https://bagelee.com/design/netlify/about-neflify/
-    ・https://hibi-update.org/other/openweathermap-api/
-</p>
+
+    
+
+<!-- JQUERY　と 天気予報のapiを読み込んでdoMに代入するjs -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="main.js"></script>
+
 
 </body>
 
