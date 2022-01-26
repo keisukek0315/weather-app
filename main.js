@@ -63,11 +63,13 @@ const UNIT = {
     MIDDLE_DOT: ':'
 }
 
+let date
+
 //DOM要素に描写
 function domWeatherWrite() {
     $('#city-name').html(city.name);
     $('#weather-temp').html('NOW ' + city.temp + UNIT.TEMP);
-    $('#tempMin').html('MIX ' + city.tempMin + UNIT.TEMP);
+    $('#tempMin').html('MIN ' + city.tempMin + UNIT.TEMP);
     $('#tempMax').html('MAX' + city.tempMax + UNIT.TEMP);
     $('#feelsLike').html(city.feelsLike + UNIT.TEMP);
     $('#humidity').html(city.humidity + UNIT.HUMIDITY);
@@ -80,6 +82,19 @@ function domWeatherWrite() {
 }
 
 
+document.getElementById("show_time").innerHTML = getNow()
+
+function getNow(){
+    let now = new Date();
+    let year = now.getFullYear();
+    let mon = now.getMonth()+1;
+    let day = now.getDate();
+    let hour = now.getHours();
+    let min = now.getMinutes();
+
+    let s = 'accessed at ' + year + '/' + mon + '/' + day + ' ' + hour + ':' + min;
+    return s;
+}
 
 
 
