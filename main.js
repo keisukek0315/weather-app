@@ -66,9 +66,9 @@ const UNIT = {
 //DOM要素に描写
 function domWeatherWrite() {
     $('#city-name').html(city.name);
-    $('#weather-temp').html(city.temp + UNIT.TEMP);
-    $('#tempMin').html(city.tempMin + UNIT.TEMP);
-    $('#tempMax').html(city.tempMax + UNIT.TEMP);
+    $('#weather-temp').html('NOW ' + city.temp + UNIT.TEMP);
+    $('#tempMin').html('MIX ' + city.tempMin + UNIT.TEMP);
+    $('#tempMax').html('MAX' + city.tempMax + UNIT.TEMP);
     $('#feelsLike').html(city.feelsLike + UNIT.TEMP);
     $('#humidity').html(city.humidity + UNIT.HUMIDITY);
     $('#sunrise').html(city.sunriseTime);
